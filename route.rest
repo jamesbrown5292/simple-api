@@ -2,7 +2,7 @@ GET http://localhost:8080/subscribers
 
 ###
 
-GET http://localhost:8080/subscribers/15
+GET http://localhost:8080/subscribers/6244aed99728ae791affdd4e
 
 ###
 
@@ -11,5 +11,18 @@ Content-Type: application/json
 
 {
     "name": "James",
+    "subscribedToChannel": "JamesChannel"
+}
+
+###
+
+DELETE http://localhost:8080/subscribers/6244b08640a623862c7c72be
+###
+
+PATCH http://localhost:8080/subscribers/6244b08440a623862c7c72bc
+Content-Type: application/json
+
+{
+    "name": "James THREE",
     "subscribedToChannel": "JamesChannel"
 }
