@@ -1,0 +1,15 @@
+GET http://localhost:8080/subscribers
+
+###
+
+GET http://localhost:8080/subscribers/15
+
+###
+
+POST http://localhost:8080/subscribers
+Content-Type: application/json
+
+{
+    "name": "James",
+    "subscribedToChannel": "JamesChannel"
+}
